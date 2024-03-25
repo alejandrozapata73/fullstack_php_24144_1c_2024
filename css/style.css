@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+
+#banner {
+    background-image: url('../img/banner_bg.jpg');
+    background-size: cover;
+    height: 400px;
+}
+
+section {
+
+    text-align: center;
+
+}
+
+
+
+img {
+    width: 20%;
+}
+
+
+
