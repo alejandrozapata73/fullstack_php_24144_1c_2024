@@ -26,5 +26,51 @@ img {
     width: 20%;
 }
 
+h2 {
+    display: inline;
+}
+
+h2:hover {
+    color: chartreuse;
+}
+
+h1 {
+    display: inline;
+}
+
+a{
+    display: block;
+}
+
+ul {
+    display: inline;
+}
+
+
+.cambio-inline {
+    display: inline;
+}
+
+.cambio-inline li {
+    display: inline;
+    
+}
+
+.cambio-inline li:hover {
+    color: brown;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+#display3 {
+    display: none;
+}
+
+/* .imagenChau:hover {
+   
+} */
+
 
 
