@@ -74,3 +74,19 @@ ul {
 
 
 
+#bordes {
+
+    width: 90px;
+    height: 90px;
+    margin: 50px;
+    padding: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 2px;
+
+}
+
+
+
+
