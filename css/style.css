@@ -1,6 +1,9 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
 }
 
 body {
@@ -74,17 +77,74 @@ ul {
 
 
 
-#bordes {
+#bordes1 {
 
     width: 90px;
     height: 90px;
     margin: 50px;
     padding: 2px;
-    border-width: 1px;
+    border-width: 3px;
     border-style: solid;
     border-color: blue;
     border-radius: 2px;
+    position: relative;
+    left: 120px;
+    
 
+}
+
+#bordes2 {
+
+    width: 90px;
+    height: 90px;
+    margin: 70px;
+    padding: 2px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 2px;
+
+}
+
+.container {
+
+
+    width: 800px;
+    height: 400px;
+    background-color: bisque;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.item {
+
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    display: inline-block;
+
+}
+
+.item-1 {
+    background-color: blueviolet;
+}
+
+.item-2 {
+    background-color: green;
+    
+    
+}
+
+.item-3 {
+    background-color: black;
+    color: white;
+    
 }
 
 
