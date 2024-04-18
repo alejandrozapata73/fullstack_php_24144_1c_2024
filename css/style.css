@@ -106,15 +106,7 @@ ul {
 
 }
 
-.container {
-
-
-    width: 800px;
-    height: 400px;
-    background-color: bisque;
-
-
-}
+.container {width: 800px; height: 400px; background-color: bisque;}
 
 .container {
     display: flex;
