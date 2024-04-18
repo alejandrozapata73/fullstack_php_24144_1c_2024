@@ -6,9 +6,19 @@ body {
 .elemento {
     width: 200px;
     height: 200px;
+
     background-color: red;
-    
-    
+    clip-path: circle(100%);
+    transition: background-color 2s, clip-path 2s;
+   
+     
+}
+
+.elemento:hover {
+
+   background-color: black;
+   clip-path: circle(20%);
+
 }
 
 
