@@ -1,0 +1,17 @@
+JavaScript (interpretado)- navegador(motor V8)
+
+JAVA-Compilado (IDE)
+
+
+Dinamico 
+
+Web-C#-java-php (Node - )
+ c / c++ 
+ Android
+
+ Algoritmos... 
+ Algoritmia..
+ Logica..
+
+
+
