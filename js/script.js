@@ -166,38 +166,219 @@ distinto !=
 
 */
 
-console.log(10>5)
-console.log(10<8)//
-console.log(1==1)
-console.log(1!=1)
-console.log(1=="1")//
-console.log(1==="1")
-console.log("++++")
-console.log(1==true)//1 == 1
-console.log(1===true)
-console.log("++caracteres++")
-console.log("a"=="a")
-console.log("casa"=="casa")
-//codigo ASSCII
-//alt + 64
-console.log("Casa"=="casa")
-console.log("a">"A")
-console.log("a"<"A")
+// console.log(10>5)
+// console.log(10<8)//
+// console.log(1==1)
+// console.log(1!=1)
+// console.log(1=="1")//
+// console.log(1==="1")
+// console.log("++++")
+// console.log(1==true)//1 == 1
+// console.log(1===true)
+// console.log("++caracteres++")
+// console.log("a"=="a")
+// console.log("casa"=="casa")
+// //codigo ASSCII
+// //alt + 64
+// console.log("Casa"=="casa")
+// console.log("a">"A")
+// console.log("a"<"A")
 
-//condicional
+// // //condicional
 
 const nombreUsuario = "juan73"
 const passUsuario = "123456"
 
 
-var PassWord = prompt("ingrese su pass")
+// // var PassWord = prompt("ingrese su pass")
 
-if(PassWord==passUsuario){
-    console.log("hola soy un condicional")
+// // if(PassWord==passUsuario){
+// //     console.log("hola soy un condicional")
     
+// // }
+
+
+// // if(vidaMario==0){
+// //     alert("game over")
+// // }
+
+
+//operadores de relacion..Operadores logicos
+//AND
+
+/*
+Tabla de verdad 
+
+true  and true   = true
+true  and false  = false
+false and true   = false
+false and false  = false 
+      &&
+
+
+*/
+
+const passUsuarioA      = "123456"
+const correoUsuario     = "alejandro@gmail.com"
+const permitirUsuario   = 18
+const sosRobot          = false
+
+var correoInput = "alejandro@gmail.com"
+var passInput = "123456"
+
+
+/*
+Prueba de Escritorio:
+true   && true = true
+false  && true = false
+
+*/
+
+
+/*Operador Logico OR
+
+true  || true || true   = true
+true  || false  = true
+false || true   = true
+false || false  = false
+
+false  || true = true
+
+*/
+
+/*
+Negado: !
+
+*/
+
+// if(correoUsuario == correoInput && passUsuarioA==passInput && edadUsuario > edadInput && sosRobot==inputRobot){
+
+//     alert("podes ingresar con tu usuario: " + correoInput)
+//     document.write("podes ingresar con tu usuario: " + correoInput)
+
+//     if(edadInput > 18){
+
+
+//     }
+
+
+// }else{
+
+//     alert("el usuario o contraseña no es correcto")
+// }
+
+// // if(!true){
+
+// //     alert("hola probando el negado")
+
+// // }else{
+
+// //     alert("hola inviertiendo el negado")
+// // }
+
+// console.log(!10<5)//
+
+
+//algoritmo..problema
+
+// const dia = parseInt(prompt("ingrese en numeros el dia"))
+
+// console.log(typeof dia)
+
+
+// if(dia!=="1"){
+//     alert("es Lunes")
+// }else if(dia!=="2"){
+//     alert("es marte")
+// }else if(dia !== "3"){
+//     alert("Es miercoles")
+// }else if(dia !== "4"){
+//     alert("es jueves")
+// }else{
+//     alert("no ingre nada")
+// }
+
+// switch(dia){
+
+//     //dia !== "1" || 1
+//     case "1":
+//         alert("es Lunes Switch")
+//         break
+//     case "2":
+//         alert("es martes Switch")
+//         break
+//     case "3":
+//         alert("es miercoles Switch")
+//     default:
+//         alert("ningun dia...")
+//         break
+
+// }
+
+//calculadora---
+/*
++
+-
+*
+/
+*/
+
+/* Cajero
+
+1-consultar Saldo
+2-retirar efectivo
+3-transferir
+4-pagar impuestos
+5-depositar
+
+*/
+
+
+let saldoUsuario = 10000
+
+let saldoCajero =  20000
+
+
+const opcionCajero = prompt("elegir alguna opcion: 1-consultar saldo 2-retirar efectivo")
+
+
+switch(opcionCajero){
+
+    case "1":
+        alert("esta por consultar saldo")
+        alert("su saldo es: "+saldoUsuario)
+        if(saldoUsuario<=0){
+            alert("Abrazo contenedor")
+            alert("tenemos la mejor oferta de creditos")
+            //funcion para enviar link
+        }
+        break
+    case "2":
+        if(saldoCajero<=0){
+            alert("luz titilante roja")
+
+        }
+
+        const sacarPlata = Number(prompt("ingrese la cantida a extrer"))
+
+        if(sacarPlata<saldoUsuario){
+
+            saldoUsuario = saldoUsuario - sacarPlata
+            alert("su saldo actual es: " + saldoUsuario)
+            saldoCajero = saldoCajero - sacarPlata
+        }
+        else{
+            alert("el monto a extraer es superior a su saldo")
+        }
+        break
+
+    default:
+        alert("ninguna opcion es correcto")
+        break
+
+
+
 }
 
 
-if(vidaMario==0){
-    alert("game over")
-}
+
