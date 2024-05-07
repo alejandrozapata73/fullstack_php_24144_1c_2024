@@ -443,80 +443,183 @@
 
 //     contador++
 
-// }
+// // }
 
+
+// // let contador = 0
+
+// // while(contador<=50){
+
+// //     // if(contador%2==0){
+// //     //     console.log(contador)
+// //     // }
+
+// //     if(contador==25){
+// //         break
+// //     }else{
+// //         console.log(contador)
+// //     }
+
+// //     contador++
+
+// // }
+
+
+
+// // do{
+
+// //     contador=30
+// //     alert("hola probando el do while")
+// //     contador=8
+
+// // }while(contador<10)
+
+
+
+
+// let nombre1 = "Walter"
+// let nombre2 = "sergio"
+// let nombre3 = "karla"
+
+
+// // let edadesUsuarios = [25,85,45,74]
+// // let notasUsuarios = [7.5,5.99,8,7]
+// // let aproboPreEntrega = [true, false, true, false]
+
+// // let StringNumbersBool = ["walter",25,7.5,true]
+
+// // console.log(nombres[0])
+// // console.log(nombres[3])
+// // console.log(nombres[4])
+// // let bot
+// // console.log(bot)
+
+
+
+
+
+// //....indice=    0         1        2         3
+// let nombres = ["Walter","sergio","karla","bot1=Santi"]
+
+// console.log(nombres.length)//cantidad de elementos que 
 
 // let contador = 0
 
-// while(contador<=50){
 
-//     // if(contador%2==0){
-//     //     console.log(contador)
-//     // }
+//   while(contador<nombres.length){
 
-//     if(contador==25){
-//         break
-//     }else{
-//         console.log(contador)
-//     }
+//      let nombreUsuario = prompt("ingrese su  nombre")
 
-//     contador++
-
-// }
-
-
-
-// do{
-
-//     contador=30
-//     alert("hola probando el do while")
-//     contador=8
-
-// }while(contador<10)
-
-
-
-
-let nombre1 = "Walter"
-let nombre2 = "sergio"
-let nombre3 = "karla"
-
-
-// let edadesUsuarios = [25,85,45,74]
-// let notasUsuarios = [7.5,5.99,8,7]
-// let aproboPreEntrega = [true, false, true, false]
-
-// let StringNumbersBool = ["walter",25,7.5,true]
-
-// console.log(nombres[0])
-// console.log(nombres[3])
-// console.log(nombres[4])
-// let bot
-// console.log(bot)
-
-
-
-
-
-//....indice=    0         1        2         3
-let nombres = ["Walter","sergio","karla","bot1=Santi"]
-
-console.log(nombres.length)//cantidad de elementos que 
-
-let contador = 0
-
-
-  while(contador<nombres.length){
-
-     let nombreUsuario = prompt("ingrese su  nombre")
-
-     nombres[contador] = nombreUsuario
+//      nombres[contador] = nombreUsuario
     
    
-     contador++
- }
+//      contador++
+//  }
 
- console.log(nombres[0])
- console.log(nombres[1])
- console.log(nombres[2])
- console.log(nombres[3])
+//  //leer array..
+
+//  //while()
+
+
+
+//  //
+
+
+// let alumnosInscriptos       = ["sergio","yesica","pablo","guillermo"]
+
+// let alumnosNotasPreEntrega  = [true,true,false,true]
+
+// console.log("Nombre Alumno: " + alumnosInscriptos[0])
+// console.log("Estado de entrega: " + alumnosNotasPreEntrega[0])
+
+// console.log("***Notas de Alumnos****")
+
+//  for(i = 0;i<alumnosInscriptos.length;i++){
+
+//   console.log("Nombre Alumno: " + alumnosInscriptos[i])
+//   console.log("Estado de entrega: " + alumnosNotasPreEntrega[i])
+//   console.log("***************************")
+
+//  }
+
+ //tarea....
+
+ //funciones!!!
+
+ /*
+input..recibe "algo"
+
+internamente....
+
+ output..salida
+ */
+
+
+//  alert("hola funciones")
+
+ let numeroA = 15
+
+ let numeroB = 20
+
+ let numeroC = 30
+
+ let numeroD = 40
+
+
+let sumaNumerosA = numeroA + numeroB + "Total Pago"
+
+
+
+//funciones
+
+function sumarNumeros(){
+
+  alert("hola funcion: modificada")
+  console.log("hola este es otro bloque interno")
+
+}
+
+//tipo "global"
+let numA = 30
+let numB = 20
+
+function sumarNumerosParametros(a,b){
+
+  let sumar = a + b
+  console.log("La suma de los numeros es: " + sumar)
+  
+}
+
+sumarNumerosParametros(numA,numB)
+
+sumarNumerosParametros(45,14)
+
+sumarNumerosParametros(100,50)
+
+console.log("hola soy un console y descubri que soy una funcion")
+
+
+//crear una funcion que me defina si un numero es par...
+
+
+
+function numPar(valorEvaluar) {
+  
+  if(valorEvaluar%2==0){
+    alert("Felicitaciones es PAR!!!!")
+  }
+
+}
+
+
+let ecografiaJuan = parseInt(prompt("ingrese un numero"))
+
+
+for(i=0;i<50;i++){
+numPar(ecografia)
+}
+
+
+if(true){
+  numPar(2)
+}
