@@ -557,69 +557,181 @@ internamente....
 
 //  alert("hola funciones")
 
- let numeroA = 15
+//  let numeroA = 15
 
- let numeroB = 20
+//  let numeroB = 20
 
- let numeroC = 30
+//  let numeroC = 30
 
- let numeroD = 40
-
-
-let sumaNumerosA = numeroA + numeroB + "Total Pago"
+//  let numeroD = 40
 
 
+// let sumaNumerosA = numeroA + numeroB + "Total Pago"
 
-//funciones
 
-function sumarNumeros(){
 
-  alert("hola funcion: modificada")
-  console.log("hola este es otro bloque interno")
+// //funciones
 
-}
+// function sumarNumeros(){
 
-//tipo "global"
-let numA = 30
-let numB = 20
+//   alert("hola funcion: modificada")
+//   console.log("hola este es otro bloque interno")
 
-function sumarNumerosParametros(a,b){
+// }
 
-  let sumar = a + b
-  console.log("La suma de los numeros es: " + sumar)
+// //tipo "global"
+// let numA = 30
+// let numB = 20
+
+// function sumarNumerosParametros(a,b){
+
+// //   let sumar = a + b
+// //   console.log("La suma de los numeros es: " + sumar)
   
-}
+// // }
 
-sumarNumerosParametros(numA,numB)
+// // sumarNumerosParametros(numA,numB)
 
-sumarNumerosParametros(45,14)
+// // sumarNumerosParametros(45,14)
 
-sumarNumerosParametros(100,50)
+// // sumarNumerosParametros(100,50)
 
-console.log("hola soy un console y descubri que soy una funcion")
-
-
-//crear una funcion que me defina si un numero es par...
+// // console.log("hola soy un console y descubri que soy una funcion")
 
 
+// // //crear una funcion que me defina si un numero es par...
 
-function numPar(valorEvaluar) {
+
+
+// // function numPar(valorEvaluar) {
   
-  if(valorEvaluar%2==0){
-    alert("Felicitaciones es PAR!!!!")
-  }
+// //   if(valorEvaluar%2==0){
+// //     alert("Felicitaciones es PAR!!!!")
+// //   }
+
+// // }
+
+
+// // let ecografiaJuan = parseInt(prompt("ingrese un numero"))
+
+
+// // for(i=0;i<50;i++){
+// // numPar(ecografia)
+// // }
+
+
+// // if(true){
+// //   numPar(2)
+// // }
+
+// let resultado = 0
+
+// function nombreFuncionX(a,b){
+
+
+//   alert("hola: " + (a+ b))
+
+//   resultado = a+b
+
+// }
+
+// console.log("probando 3 0 mas")
+
+// nombreFuncionX(10,15)
+// console.log(resultado)
+
+
+
+// function nombreFuncionRetorno(){
+
+
+
+//   return "hola"
+// }
+
+// let guardaValorFuncion = nombreFuncionRetorno()
+// let guardarValorFuncionSinRetorno = nombreFuncionX()
+
+// console.log(nombreFuncionX())
+// console.log(guardaValorFuncion)
+// console.log(guardarValorFuncionSinRetorno)
+
+
+
+//funcion si es mayor de edad
+// function mayorEdad(edad){
+
+//   if(edad>=18){
+//     return true
+//   }else{
+//     return false
+//   }
+
+// }
+
+
+// //lineaVenderTicket
+
+// if(mayorEdad(14)){
+//   alert("puedo venderle el ticket")
+// }else{
+//   alert("no puedo vender el ticket")
+// }
+
+
+// function fusionConRetornoSinRetornoSumar(a,b){
+
+//   let suma = a+b
+
+//   alert("la suma es: " + suma)
+
+//   //return suma
+// }
+
+
+// let guardarValor = 5+6
+// console.log(guardarValor)
+
+
+
+function saludarPHP(){
+
+  alert("hola saludando desde el mas alla")
+  console.log("hola probando datos de js")
+  
 
 }
 
-
-let ecografiaJuan = parseInt(prompt("ingrese un numero"))
-
-
-for(i=0;i<50;i++){
-numPar(ecografia)
-}
+/*
+Eventos
+1-Definir a quien o quienes capturar (h3)
+2-saber bien en claro el id
+3-
 
 
-if(true){
-  numPar(2)
+
+*/
+
+
+console.log(document.getElementById("h3Capturado"))
+
+document.getElementById("h3Capturado").textContent
+
+
+//crear funcion para cambiar texto
+
+function cambiarTexto(){
+
+  console.log("hola probando evento")
+
+  // console.log(document.getElementById("h3Capturado").textContent)
+
+  document.getElementById("h3Capturado").textContent = "Voila!!! es magico!!!"
+
+  console.log(document.getElementById("capturarValor").value)
+
+  let guardarValorInput = document.getElementById("capturarValor").value
+
+  document.getElementById("h3Capturado").textContent = guardarValorInput
+
 }
