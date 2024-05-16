@@ -86,16 +86,44 @@ function nombrarAlumnosBack(){
 
 const form = document.querySelector('form');
 // Agrega un evento de escucha para cuando se envía el formulario
+
+
+/* 
+form.addEventListener('submit', pararSubmit)
+
+function pararSubmit() {
+
+     event.preventDefault(); 
+
+}
+
+
 form.addEventListener('submit', (event) => {
+
+    event.preventDefault()
+
+})
+
+*/
+
+
+
+
+form.addEventListener('submit', (e) => {
     // Si la validación del formulario no es exitosa
 
-    
-
+   
     if (!validarForm()) {
+
+
         // Muestra un mensaje en la consola indicando que el formulario no es válido
         console.log('El formulario no es válido. Por favor, corrige los errores.');
         // Evita que el formulario se envíe
-        event.preventDefault(); // Evita que el formulario se envíe si hay errores de validación
+        e.preventDefault(); // Evita que el formulario se envíe si hay errores de validación
+
+
+        
+
     } else {
         // Si la validación del formulario es exitosa, muestra un mensaje en la consola
         console.log('El formulario es válido. Enviar datos...');
@@ -111,6 +139,7 @@ form.addEventListener('submit', (event) => {
 function validarForm(){
 
     let esValido = true;
+    //................True...................True
     esValido = validarCampo('password') && esValido; // Validar campo de email
     
 
@@ -129,3 +158,23 @@ const validarCampo = (campo) => {
     }
 
 };
+
+
+
+
+//input usuario input password
+
+let inputUsuario = document.getElementById("usuario")
+
+let inputPasswor = document.getElementById("password")
+
+let a =inputUsuario.value
+
+let b=inputPasswor.value
+
+if(a==='' && b===''){
+
+    alert("esta vacio")
+    
+}
+//

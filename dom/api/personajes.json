@@ -1,0 +1,7 @@
+{
+    "id": 1,
+    "nombre":"batman",
+    "superPoder": "billetera",
+    "edad": 45,
+    "volar": false
+}
