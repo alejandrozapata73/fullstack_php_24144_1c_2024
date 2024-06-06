@@ -70,6 +70,25 @@ echo "<h1>Hola soy un h1 </h1>";
 
     <input type="text" name="nombre">
 
+    <label for="">edad</label>
+
+    <input type="number" name="edad">
+
+    <label for="">Tipo Usuario</label>
+
+    <input type="text" name="tiposuario">
+
+
+    <select name="usuario_select" id="">
+
+        <option value="premium">comun</option>
+        <option value="premium">premium</option>
+        <option value="premium">platino</option>
+
+    </select>
+
+
+
     <label for="">Apellido</label>
 
     <input type="text" name="apellido">
@@ -81,6 +100,10 @@ echo "<h1>Hola soy un h1 </h1>";
     <textarea name="descripcion" id=""></textarea>
 
     <input type="submit" value = "enviar">
+
+    <label for="">Cantidad Cards</label>
+
+    <input type="number" name="cantidadCards">
 
 </form>
 
