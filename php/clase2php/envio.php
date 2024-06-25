@@ -1,75 +1,53 @@
 <?php
 
 
+echo "estoy probando la conexion";
 
-/*
+//que pasa con las funciones con retorno....
+$conexion = mysqli_connect("localhost","root","","pruebas24144");
 
-insert into peliculas...
+if(mysqli_connect_errno()){
 
-*/
-
-
-if($_POST) {
-
-
-    var_dump($_POST);
-
-
-    /*
-
-        insert into peliculas...
-
-    */
-
-
-    //datos que vienen de una base de datos...
-    $admin="admin";
-    $claveUsuario = "123456";
-    $pagoMembresia = false;
-    $roles = ['admin','gestor','colaborador','alumno'];
-
-
-
-
-    $nombre = $_POST['nombre'];
-    $descripcion = $_POST['descripcion'];
-    $clave = $_POST['clave'];
-
-   
-    echo "<br>";
-
-    if($nombre==$admin && $clave ==$claveUsuario && $pagoMembresia==true) {
-
-
-        /*
-
-            insert into peliculas...
-
-        */
-
-
-        echo "el nombre de usuario es: ". $nombre;
-        echo "su claves : " . $clave;    
-
-    
-        
-
-    }else {
-
-
-        echo "ustede no puede visualizar la clave por usuario o pass incorrectos o membresia no paga";
-        // if($pagoMembresia==false){
-        //     echo "ustede debe pagar la cuota....";
-        // }
-
-    }
-
-
-
-
+    echo "ERROR no se conecto: ". mysqli_connect_errno();
 
 }else{
+    echo "Se conecto de manera correcta mas facil que...";
+}
 
-    echo "no hay datos que se implementan del formulario";
+echo "<br>";
+
+$consultas = mysqli_query($conexion,"select * from pruebas");
+
+var_dump($consultas);
+
+echo "<br>";
+echo "<hr>";
+// $listado = mysqli_fetch_assoc($consultas);
+
+// var_dump($listado);
+
+// echo "<br>";
+// echo "<hr>";
+
+// echo $listado['nombre'], " ";
+// echo $listado['correo'];
+
+
+//.... segunda parte...
+
+// $listado = mysqli_fetch_array($consultas);
+
+echo "<pre>";
+// var_dump($listado);
+echo "</pre>";
+
+//recorrerlos de punta a punta
+
+while($listado = mysqli_fetch_array($consultas)){
+
+        echo $listado['id']," ", $listado['nombre'], " " , $listado['apellido'], "<br>";
+
 
 }
+
+//para el jueves....
